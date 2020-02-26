@@ -4,25 +4,18 @@
     margin: 0;
     padding: 0;
 }
-  
-body {
-    font-size: 1.6rem;
-    width: 1020;;
-}
 
 .wrapper {
-    width: 940px;
+    width: 950px;
     margin: auto;
 }
+
+
+    /*Header Styles*/
 
 .header {
     height: 89px;
     background-color: #2d303a;
-}
-
-.header-line-under {
-    height: 6px;
-    background-color: #323746;
 }
 
 .logo {
@@ -35,7 +28,9 @@ body {
 h1,
 .header span {
     display: inline;
-    font-size: 2.5rem;
+    font-size: 2.7rem;
+    font-weight: 400;
+    font-stretch: 20%;
     color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
@@ -45,26 +40,27 @@ h1,
     color: #eb5055;
 }
 
-
-
-.header__navigation {
+.navigation {
     float: right;
 }
 
-.navigation {
-    line-height: 89px;
-    vertical-align: middle;
-}
-
 .navigation__link {
-    display: inline;
-    margin-right: 11px;
-    margin-left: 11px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
     font-weight: 700;
     font-size: 1.2rem;
     text-transform: uppercase;
     color: #ffffff;
     text-decoration: none;
+    line-height: 6px;
+    padding-top: 47px;
+    /*line-height: 89px;
+    vertical-align: middle;*/ 
+}
+
+.navigation:last-child {
+    margin-right: 0;
 }
 
 .navigation__link:hover {
@@ -78,25 +74,34 @@ h1,
     cursor: default;
 }
 
-.navigation__point:hover {
-    cursor: default;
+.navigation__point {
+    font-size: 7px;
 }
 
-.navigation:last-child::after {
-    content: none;
+.navigation__point:hover {
+    cursor: default;
 }
 
 .navigation__link_active {
     color: #eb5055;
 }
 
+.header-line-under {
+    height: 6px;
+    background-color: #323746;
+}
+
+
+    /*Slider Styles*/
+
 .slider {
-    height: 600px;
+    height: 594px;
     background-color: #f06c64;
 }
 
 .slider__wrapper {
-    height: 600px;
+    height: 594px;
+    position: relative;
 }
 
 .slider-line-under {
@@ -104,4 +109,26 @@ h1,
     background-color: #ea676b;
 }
 
-slider__button_left
+.slider__button_left,
+.slider__button_right {
+    width: 16px;
+    height: 27px;
+}
+
+.slider__button_left {
+    position: absolute;
+    top: 280px;
+    left: 0;
+}
+
+.slider__button_right {
+    position: absolute;
+    top: 280px;
+    right: 0px;
+    transform: rotate(180deg);
+}
+
+.slider__button_left:hover,
+.slider__button_right:hover {
+    cursor: pointer;
+}
