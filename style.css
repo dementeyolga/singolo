@@ -6,12 +6,15 @@
 }
 
 .wrapper {
-    width: 950px;
+    width: 940px;
     margin: auto;
+    position: relative;
 }
 
 
-    /*Header Styles*/
+    /* Header Styles */
+
+    /* Header Logo */
 
 .header {
     height: 89px;
@@ -59,7 +62,7 @@ h1,
     vertical-align: middle;*/ 
 }
 
-.navigation:last-child {
+.navigation__link:last-child {
     margin-right: 0;
 }
 
@@ -99,10 +102,6 @@ h1,
     background-color: #f06c64;
 }
 
-.slider__wrapper {
-    height: 594px;
-    position: relative;
-}
 
 .slider-line-under {
     height: 6px;
@@ -128,7 +127,220 @@ h1,
     transform: rotate(180deg);
 }
 
+    /* Vertical Phone */
+
+.slider__vertical-phone {
+    position: relative;
+}
+
 .slider__button_left:hover,
 .slider__button_right:hover {
     cursor: pointer;
 }
+
+.slider__vertical-phone-component,
+.slider__vertical-phone-shadow {
+    position: absolute;
+    top: 53px;
+    left: 71px;
+}
+
+.slider__vertical-phone-component {
+    z-index: 1;
+}
+
+    /* Horizontal Phone */
+
+.slider__horizontal-phone {
+        position: relative;
+}
+
+.slider__horizontal-phone-component {
+    position: absolute;
+    top: 53px;
+    right: 220px;
+    transform: rotate(90deg);
+}
+
+.slider__horizontal-phone-shadow {
+    position: absolute;
+    top: 53px;
+    right: 194px;
+    transform-origin: center center;
+    transform: scale(-1,1) rotate(90deg); 
+}
+
+.slider__horizontal-phone-component {
+    z-index: 1;
+}
+
+    /* Vertical Phone Picture */
+
+.slider__vertical-phone-picture {
+    background: url(assets/slider/vertical-phone-picture.png);
+    background-position: -14px -135px;
+    width: 189px;
+    height: 334px;
+    z-index: 2;
+    position: absolute;
+    top: 117.5px;
+    left: 84.5px;
+}
+
+    /* Horizontal Phone Picture */
+
+.slider__horizontal-phone-picture {
+    background: url(assets/slider/horizontal-phone-picture.png);
+    background-position: -125px -119px;
+    width: 334px;
+    height: 189px;
+    z-index: 2;
+    position: absolute;
+    top: 188px;
+    right: 163px;
+}
+
+
+    /* Services Styles */
+
+.services {
+    height: 494px;
+    background-color: #f2f2f2;
+    color: #666d89;
+}
+
+h2 {
+    font-size: 3rem;
+    line-height: 18px;
+    font-weight: 900;
+    text-align: left;
+    padding-top: 68px;
+}
+
+.services__legend {
+    padding-top: 27px;
+    padding-bottom: 45px;
+    height: 57px;
+    font-size: 1.8rem;
+    line-height: 30px;
+    color: #767e9e;
+    font-weight: 300;
+    text-align: left;
+}
+
+.layout-3-column {
+    padding-top: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
+    flex-wrap: wrap;
+    height: 208px;
+}
+
+.service {
+    flex: 300px;
+    display: flex;
+}
+
+.service__part1 {
+    flex: 60px;
+}
+
+.service__part2 {
+    flex: 220px;
+}
+
+.ico {
+    display: block;
+    height: 55px;
+    width: 55px;
+    border-width: 0.5px;
+    border-color: #767e9e;
+    border-radius: 50%;
+    border: solid;
+}
+
+.ico_pen {
+    display: block;
+    height: 55px;
+    width: 55px; 
+    background: url(assets/icons/pen.svg) center no-repeat;
+}
+
+.ico_bulb {
+    display: block;
+    height: 55px;
+    width: 55px; 
+    background: url(assets/icons/bulb.svg) center no-repeat;
+}
+
+.ico_heart {
+    display: block;
+    height: 55px;
+    width: 55px; 
+    background: url(assets/icons/heart.svg) center no-repeat;
+}
+
+.ico_phone {
+    display: block;
+    height: 55px;
+    width: 55px; 
+    background: url(assets/icons/phone.svg) center no-repeat;
+}
+
+.ico_bubble {
+    display: block;
+    height: 55px;
+    width: 55px; 
+    background: url(assets/icons/bubble.svg) center no-repeat;
+}
+
+.ico_star { 
+    display: block;
+    height: 55px;
+    width: 55px; 
+    background: url(assets/icons/star.svg) center no-repeat;
+}
+
+.service h3 {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    color: #666d89;
+    font-weight: 900;
+    text-align: left;
+}
+
+.service p {
+    width: 219px;
+    height: 128px;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    color: #767e9e;
+    font-weight: 400;
+    text-align: left;
+}
+
+
+
+
+
+
+.service-icon {
+    
+}
+
+
+
+
+
+
+.services-line-under {
+    height: 6px;
+    background-color: #ffffff;
+}
+
+
+
+
+
+
