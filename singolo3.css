@@ -1,0 +1,41 @@
+    /* General styles fot Singolo */
+
+    * {
+        font-family: "Lato", Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        font-size: 10px;
+    }
+
+    .wrapper {
+        width: 940px;
+        margin: auto;
+        position: relative;
+    }
+
+    /* Contact Styles */
+
+    .contact {
+        height: 648px;
+        background-color: #f06c64;
+        border-bottom: 6px solid #ea676b;
+    }
+
+    .contact h2 {
+        padding-top: 68px;
+        font-size: 3rem;
+        line-height: 18px;
+        color: #f0d8d9;
+        font-weight: 900;
+    }
+
+    .contact p {
+        padding-top: 27px;
+        font-size: 1.8rem;
+        line-height: 30px;
+        color: #f0d8d9;
+        font-weight: 300;
+    }
