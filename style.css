@@ -33,19 +33,19 @@ html {
     text-decoration: none;
 }
 
-h1,
-.header span {
+.header h1 {
     display: inline;
-    font-size: 2.7rem;
+    font-size: 2.5rem;
     font-weight: 400;
-    font-stretch: 20%;
     color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
-    letter-spacing: -1.9px;
+    margin-top: -2px;
+    letter-spacing: -0.5px;
 }
 
-.header span {
+.header h1::after {
+    content: "*";
     color: #eb5055;
 }
 
@@ -62,7 +62,7 @@ h1,
     color: #ffffff;
     text-decoration: none;
     line-height: 6px;
-    padding-top: 46px;
+    padding-top: 45.5px;
     letter-spacing: -0.4px;
 }
 
@@ -222,6 +222,7 @@ h2 {
     font-weight: 900;
     text-align: left;
     padding-top: 68px;
+    letter-spacing: -0.3px;
 }
 
 .services__legend {
