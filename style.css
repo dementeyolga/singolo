@@ -466,6 +466,7 @@ h2 {
     font-weight: 900;
     padding-top: 18px;
     white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .employees__descriptions p {
@@ -528,10 +529,12 @@ h2 {
 }
 
 .form__field {
-    width: 619px;
+    width: 603px;
     border-radius: 5px;
     border: none;
     background-color: #d6564f;
+    padding-left: 16px;
+    color: #f0d8d9;
 }
 
 .form__field::placeholder {
@@ -539,7 +542,6 @@ h2 {
     line-height: 38px;
     color: #f48c8f;
     font-weight: 400;
-    padding-left: 16px;
     vertical-align: middle;
 }
 
@@ -673,6 +675,12 @@ h2 {
     width: 152px;
     justify-content: space-between;
     padding-top: 1px;
+}
+
+.footer__social-media img:hover {
+    cursor: pointer;
+    background: #dadada0a;
+    border-radius: 50%;
 }
 
 .footer__flex {
